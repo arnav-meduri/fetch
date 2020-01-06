@@ -1,3 +1,14 @@
-# Ionic React Conference Demo App
+# A mobile application for managing Storm Water quality in your local community
 
-You can see a live demo here. (https://ionic-react-conference-app.firebaseapp.com/)
+A crowdsourcing mobile application for managing storm water quality by community members.
+
+## Developers
+
+- Arnav Meduri (8th grade, Carnage Magnet Middle school, Raleigh NC)
+- Abhinav Meduri (8th grade, Carnage Magnet Middle school, Raleigh NC)
+- Kartik Nanduri (8th grade, Carnage Magnet Middle school, Raleigh NC)
+- Siddharth Maruvada (8th grade, Carnage Magnet Middle school, Raleigh NC)
+
+## Acknowledgements
+
+We want to thank the Town of Cary and The Town of Apex storm water management team for their guidance in desiginig the application use cases.
