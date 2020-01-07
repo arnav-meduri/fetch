@@ -55,7 +55,10 @@ const About: React.FC<AboutProps> = () => {
         <div className="about-info">
           {/* <h4 className="ion-padding-start">Fetch!</h4> */}
           <h2 className="ion-padding-start">
-            Welcome to <b style={{ color: "Green" }}>Fetch!</b>
+            Welcome to{" "}
+            <b style={{ color: "Green" }}>
+              <i>Fetch!</i>
+            </b>
           </h2>
 
           {/* <IonList lines="none">
