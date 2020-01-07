@@ -113,20 +113,39 @@ const About: React.FC<AboutProps> = () => {
             </ol>
           </p>
           <p className="ion-padding-start ion-padding-end">
-            Developed by{" "}
-            <b style={{ color: "Blue" }}>
-              Arnav Meduri, Abhinav Meduri, Siddharth Maruvada, Kartik Nanduri
-            </b>{" "}
-            from <b>Carnage Middle School, Raleigh.</b>
+            Developed by <b style={{ color: "Blue" }}>Arnav Meduri Nanduri</b>
+            {", "}
+            <b style={{ color: "Blue" }}>Abhinav Meduri Nanduri</b>
+            {", "}
+            <b style={{ color: "Blue" }}>Siddharth Maruvada</b>
+            {", and "}
+            <b style={{ color: "Blue" }}>Kartik Nanduri</b>
+            {" from "}
+            <b>
+              <a href="https://www.wcpss.net/carnagems">
+                Carnage Magnet Middle School, Raleigh.
+              </a>
+            </b>
           </p>
           <p className="ion-padding-start ion-padding-end">
-            We would like to thank
-            <b style={{ color: "Blue" }}>OpenStream Inc. </b>
+            We would like to thank{" "}
+            <b style={{ color: "Blue" }}>
+              <a href="http://www.openstream.com/">OpenStream Inc. </a>
+            </b>{" "}
             for their guidance in developing and hosting the application. Also
             would like to thank{" "}
-            <b style={{ color: "Blue" }}>The Town of Cary</b> and :q
-            <b style={{ color: "Blue" }}>The Town of Apex</b> for their valuable
-            input in developing use cases.
+            <b style={{ color: "Blue" }}>
+              <a href="https://www.townofcary.org/services-publications/water-sewer/stormwater-management/">
+                The Town of Cary
+              </a>
+            </b>{" "}
+            and{" "}
+            <b style={{ color: "Blue" }}>
+              <a href="https://www.apexnc.org/263/Stormwater-Utility-Engineering">
+                The Town of Apex
+              </a>
+            </b>{" "}
+            for their valuable input in developing application use cases.
           </p>
         </div>
       </IonContent>
