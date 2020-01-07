@@ -1,13 +1,29 @@
-import React, { useState } from 'react';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMenuButton, IonButton, IonIcon, IonDatetime, IonSelectOption, IonList, IonItem, IonLabel, IonSelect, IonPopover } from '@ionic/react';
-import './About.scss';
-import { calendar, pin, more } from 'ionicons/icons';
-import AboutPopover from '../components/AboutPopover';
+import React, { useState } from "react";
+import {
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonPage,
+  IonButtons,
+  IonMenuButton,
+  IonButton,
+  IonIcon,
+  IonDatetime,
+  IonSelectOption,
+  IonList,
+  IonItem,
+  IonLabel,
+  IonSelect,
+  IonPopover
+} from "@ionic/react";
+import "./About.scss";
+import { calendar, pin, more } from "ionicons/icons";
+import AboutPopover from "../components/AboutPopover";
 
-interface AboutProps { }
+interface AboutProps {}
 
 const About: React.FC<AboutProps> = () => {
-
   const [showPopover, setShowPopover] = useState(false);
   const [popoverEvent, setPopoverEvent] = useState();
 
@@ -15,7 +31,7 @@ const About: React.FC<AboutProps> = () => {
     setPopoverEvent(e.nativeEvent);
     setShowPopover(true);
   };
-  const conferenceDate = '2047-05-17';
+  const conferenceDate = "2047-05-17";
 
   return (
     <IonPage id="about-page">
@@ -33,37 +49,84 @@ const About: React.FC<AboutProps> = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-
         <div className="about-header">
-          <img src="assets/img/ionic-logo-white.svg" alt="ionic logo" />
+          <img src="assets/img/fetch-logo.jpg" alt="Fetch logo" />
         </div>
         <div className="about-info">
-          <h4 className="ion-padding-start">Ionic Conference</h4>
+          {/* <h4 className="ion-padding-start">Fetch!</h4> */}
+          <h2 className="ion-padding-start">
+            Welcome to <b style={{ color: "Green" }}>Fetch!</b>
+          </h2>
 
-          <IonList lines="none">
+          {/* <IonList lines="none">
             <IonItem>
               <IonIcon icon={calendar} slot="start"></IonIcon>
               <IonLabel position="stacked">Date</IonLabel>
-              <IonDatetime displayFormat="MMM DD, YYYY" max="2056" value={conferenceDate}></IonDatetime>
+              <IonDatetime
+                displayFormat="MMM DD, YYYY"
+                max="2056"
+                value={conferenceDate}
+              ></IonDatetime>
             </IonItem>
 
             <IonItem>
               <IonIcon icon={pin} slot="start"></IonIcon>
               <IonLabel position="stacked">Location</IonLabel>
               <IonSelect>
-                <IonSelectOption value="madison" selected>Madison, WI</IonSelectOption>
+                <IonSelectOption value="madison" selected>
+                  Madison, WI
+                </IonSelectOption>
                 <IonSelectOption value="austin">Austin, TX</IonSelectOption>
                 <IonSelectOption value="chicago">Chicago, IL</IonSelectOption>
                 <IonSelectOption value="seattle">Seattle, WA</IonSelectOption>
               </IonSelect>
             </IonItem>
-          </IonList>
+          </IonList> */}
 
           <p className="ion-padding-start ion-padding-end">
-            The Ionic Conference is a one-day conference featuring talks from the Ionic team. It is focused on Ionic applications being
-            built with Ionic 2. This includes migrating apps from Ionic 1 to Ionic 2, Angular concepts, Webpack, Sass, and many
-            other technologies used in Ionic 2. Tickets are completely sold out, and we’re expecting more than 1000 developers
-            – making this the largest Ionic conference ever!
+            <b>Fetch!</b> is a mobile application for managing storm water
+            quality in your local community.
+          </p>
+          <p className="ion-padding-start ion-padding-end">
+            {/* <ul style={{ listStyleType: "none" }}> */}
+            <ol>
+              <li>
+                Take a{" "}
+                <i>
+                  <b style={{ color: "Blue" }}>
+                    {" "}
+                    Clean Water commitment Pledge!
+                  </b>
+                </i>{" "}
+              </li>
+              <li>
+                Report incidents that affects{" "}
+                <i style={{ color: "Blue" }}>Stormwater quality</i> in your
+                area.
+              </li>
+              <li>
+                Test Stormwater and report quality metrics for use by your Local
+                Government.
+              </li>
+              <li>Participate in Stormwater labeling projects.</li>
+              <li>Learn fun facts about Stormwater management and quality.</li>
+            </ol>
+          </p>
+          <p className="ion-padding-start ion-padding-end">
+            Developed by{" "}
+            <b style={{ color: "Blue" }}>
+              Arnav Meduri, Abhinav Meduri, Siddharth Maruvada, Kartik Nanduri
+            </b>{" "}
+            from <b>Carnage Middle School, Raleigh.</b>
+          </p>
+          <p className="ion-padding-start ion-padding-end">
+            We would like to thank
+            <b style={{ color: "Blue" }}>OpenStream Inc. </b>
+            for their guidance in developing and hosting the application. Also
+            would like to thank{" "}
+            <b style={{ color: "Blue" }}>The Town of Cary</b> and :q
+            <b style={{ color: "Blue" }}>The Town of Apex</b> for their valuable
+            input in developing use cases.
           </p>
         </div>
       </IonContent>
@@ -72,7 +135,7 @@ const About: React.FC<AboutProps> = () => {
         event={popoverEvent}
         onDidDismiss={() => setShowPopover(false)}
       >
-        <AboutPopover dismiss={() => setShowPopover(false)} /> 
+        <AboutPopover dismiss={() => setShowPopover(false)} />
       </IonPopover>
     </IonPage>
   );
